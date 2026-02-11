@@ -108,19 +108,6 @@
             height: auto;
             display: block;
         }
-        .image-placeholder {
-            width: 100%;
-            aspect-ratio: 16/10;
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(10, 10, 10, 0.8));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .image-placeholder svg {
-            width: 80px;
-            height: 80px;
-            opacity: 0.3;
-        }
         
         /* Map */
         .map-container {
@@ -215,15 +202,16 @@
             </div>
 
             <div class="video-container">
-                <!-- วิดีโอ YouTube: ลบ comment ด้านล่างและใส่ ID ของคุณ -->
-                <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+                <!-- ใส่วิดีโอที่นี่ - เลือก 1 จาก 2 วิธีด้านล่าง -->
                 
-                <!-- วิดีโอไฟล์ .mp4: อัปโหลดไฟล์ชื่อ "jetty-video.mp4" ไปที่ GitHub แล้วลบ comment ด้านล่าง -->
-                <!-- <video controls autoplay muted loop><source src="jetty-video.mp4" type="video/mp4"></video> -->
+                <!-- วิธีที่ 1: YouTube - ลบ comment ด้านล่างและใส่ Video ID ของคุณ -->
+                <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 
-                <div class="image-placeholder">
-                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
+                <!-- วิธีที่ 2: ไฟล์ .mp4 - ลบ comment ด้านล่าง (ไฟล์ต้องชื่อ jetty-video.mp4) -->
+                <video controls autoplay muted loop>
+                    <source src="jetty-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
             <div class="content-container">
@@ -270,16 +258,9 @@
                     <p>KMIT Construction is a leading construction company specializing in comprehensive building and infrastructure projects. We deliver excellence through innovative solutions and professional execution.</p>
                 </div>
 
-                <!-- KMIT Company Image -->
+                <!-- KMIT Company Image - ไฟล์ต้องชื่อ kmit-image.jpg -->
                 <div class="single-image-container">
-                    <!-- อัปโหลดรูปชื่อ "kmit-image.jpg" ไปที่ GitHub แล้วลบ comment ด้านล่าง -->
-                    <!-- <img src="kmit-image.jpg" alt="KMIT Construction"> -->
-                    
-                    <div class="image-placeholder">
-                        <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                        </svg>
-                    </div>
+                    <img src="kmit-image.jpg" alt="KMIT Construction" onerror="this.style.display='none'">
                 </div>
 
                 <div class="info-grid">
@@ -328,16 +309,9 @@
                     <p>Currently managed by Mr. Jirawat Kuramakanok, Thanawat Engineering Phuket is trusted by government agencies, local authorities, and private clients nationwide, and remains committed to providing reliable and sustainable marine engineering solutions.</p>
                 </div>
 
-                <!-- Thanawat Company Image -->
+                <!-- Thanawat Company Image - ไฟล์ต้องชื่อ thanawat-image.jpg -->
                 <div class="single-image-container">
-                    <!-- อัปโหลดรูปชื่อ "thanawat-image.jpg" ไปที่ GitHub แล้วลบ comment ด้านล่าง -->
-                    <!-- <img src="thanawat-image.jpg" alt="Thanawat Engineering"> -->
-                    
-                    <div class="image-placeholder">
-                        <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                        </svg>
-                    </div>
+                    <img src="thanawat-image.jpg" alt="Thanawat Engineering" onerror="this.style.display='none'">
                 </div>
 
                 <div class="info-grid">
